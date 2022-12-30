@@ -345,3 +345,17 @@
     &__img {
     }
 }
+@media (max-width: 1290px) {
+    .header {
+        width: 1290px;
+    }
+    .main {
+        width: 1290px;
+    }
+    .footer {
+        width: 1290px;
+    }
+    .container {
+        padding: 0 15px;
+    }
+}
