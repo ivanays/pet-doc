@@ -7,10 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet DOC</title>
     <link rel="stylesheet" href="/css/style.css">
+    <script defer src="/js/script.js"></script>
 </head>
 
 <body>
-    <header class="header">
+    <header class="header lock-padding">
         <div class="container">
             <div class="header__inner">
                 <div class="header__logo">
@@ -25,9 +26,11 @@
                         <div class="header__left">
                             <nav class="menu-header">
                                 <ul class="menu-header__list">
-                                    <li class="menu-header__item"><a href="#" class="menu-header__link link">Настройки</a>
+                                    <li class="menu-header__item"><a href="#"
+                                            class="menu-header__link link">Настройки</a>
                                     </li>
-                                    <li class="menu-header__item"><a href="#" class="menu-header__link link">Город</a></li>
+                                    <li class="menu-header__item"><a href="#" class="menu-header__link link">Город</a>
+                                    </li>
                                 </ul>
                             </nav>
                         </div>
@@ -57,21 +60,21 @@
                 <div class="header__exit">
                     <nav class="menu-header">
                         <ul class="menu-header__list">
-                            <li class="menu-header__item"><a href="#" class="menu-header__link link">Вход</a></li>
+                            <li class="menu-header__item"><a href="#popup-enter" class="menu-header__link link popup-link">Вход</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </div>
     </header>
-    <main class="main">
+    <main class="main lock-padding">
         <div class="container">
             <section class="banner">
                 <div class="banner__body">
                     <div class="banner__inner">
                         <div class="banner__offer">
                             <h1 class="banner__title">Pet Doc</h1>
-                            <p class="banner__text">Усы, лапы, хвост!</p>
+                            <h2 class="banner__text">Усы, лапы, хвост!</h2>
                             <!-- <p class="banner__text">Вот мои докумунты!</p> -->
                         </div>
                         <div class="banner__image">
@@ -83,21 +86,25 @@
             <section class="content">
                 <div class="content__inner">
                     <div class="content__article">
-                        <div class="article block">
+                        <article class="article block">
                             <div class="article__inner">
                                 <div class="article__body">
                                     <h4 class="article__title title">Почему коты мнут и топчут лапами</h4>
                                     <p class="article__text text">
-                                        Кот, мнущий лапами собственную постельку а также пританцовывающий на коленях человека, – явление не уникальное. Генетическую тягу к такому «массажу» унаследовало подавляющее большинство представителей семейства кошачьих. При этом
-                                        причины, побуждающие животное к подобным действиям, все же различаются. Так что же на самом деле вызывает у кошки
-                                        желание помять тряпочку или живот хозяина? Разбираем самые очевидные факты и теории.
+                                        Кот, мнущий лапами собственную постельку а также пританцовывающий на коленях
+                                        человека, – явление не уникальное. Генетическую тягу к такому «массажу»
+                                        унаследовало подавляющее большинство представителей семейства кошачьих. При этом
+                                        причины, побуждающие животное к подобным действиям, все же различаются. Так что
+                                        же на самом деле вызывает у кошки
+                                        желание помять тряпочку или живот хозяина? Разбираем самые очевидные факты и
+                                        теории.
                                     </p>
                                 </div>
                                 <div class="article__footer">
                                     <a href="#" class="article__link link">Читать</a>
                                 </div>
                             </div>
-                        </div>
+                        </article>
                     </div>
                     <div class="content__ads">
                         <div class="ads">
@@ -110,7 +117,8 @@
                                                     <div class="advert__body">
                                                         <h4 class="advert__title advert__title-red title">Срочно:</h4>
                                                         <p class="advert__text text">
-                                                            Пропала собака (кобель) около двух месяц назад, присутствует ошейник с кличкой и номером телефона! Пропал в районе озера
+                                                            Пропала собака (кобель) около двух месяц назад, присутствует
+                                                            ошейник с кличкой и номером телефона! Пропал в районе озера
                                                             Большой Кисегач. Просим вернуть собаку за вознаграждение
                                                         </p>
                                                     </div>
@@ -146,7 +154,8 @@
                                                     <div class="advert__body">
                                                         <h4 class="advert__title title">Отдам:</h4>
                                                         <p class="advert__text text">
-                                                            Здесь можно разместить объявление о пристройстве животных, птиц, рыбок, растений даром
+                                                            Здесь можно разместить объявление о пристройстве животных,
+                                                            птиц, рыбок, растений даром
                                                         </p>
                                                     </div>
                                                 </div>
@@ -161,7 +170,7 @@
             </section>
         </div>
     </main>
-    <footer class="footer">
+    <footer class="footer lock-padding">
         <div class="container">
             <div class="footer__inner">
                 <div class="footer__left">
@@ -198,6 +207,103 @@
             </div>
         </div>
     </footer>
+
+    <div id="popup-enter" class="popup-entrance">
+        <div class="popup-entrance__body">
+            <div class="popup-entrance__content">
+                <div class="popup-entrance__header">
+                    <div class="popup-entrance__close">
+                        <a href="#" class="popup-entrance__close-link  close-popup"><span class="popup-entrance__close-icon"></span></a>
+                    </div>
+                    <h2 class="popup-entrance__title">Вход</h2>
+                </div>
+                <div class="popup-entrance__form-entrance">
+                    <form class="form-entrance" action="#" method="post">
+                        <div class="form-entrance__imputs">
+                            <label class="form-entrance__label form-entrance__label-email"
+                                for="#entrance-email"></label>
+                            <input class="form-entrance__input form-entrance__input-email" id="entrance-email"
+                                type="text" placeholder="Почта" tabindex="1" />
+                            <label class="form-entrance__lebel form-entrance__label-password"
+                                for="#entrance-password"></label>
+                            <input class="form-entrance__input form-entrance__input-password" id="entrance-password"
+                                type="password" placeholder="Пароль" tabindex="2" />
+                        </div>
+                        <div class="form-entrance__checkbox">
+                            <div class="checkbox">
+                                <label class="checkbox__label">
+                                    <input class="checkbox__input" type="checkbox" tabindex="4" />
+                                    <span class="checkbox__span-fake"></span>
+                                    <span class="checkbox__span">Запомнить меня</span>
+                                </label>
+                            </div>
+                        </div>
+                        <label class="form-entrance__label form-entrance__label">
+                            <input class="form-entrance__button" id="entrance-button" type="button" value="Войти"
+                            tabindex="5" />
+                        </label>
+                    </form>
+                </div>
+                <div class="popup-entrance__footer">
+                    <div class="popup-entrance__footer-inem">
+                        <a href="#" class="popup-entrance__link">Забыли пароль?</a>
+                    </div>
+                    <div class="popup-entrance__footer-inem">
+                        <a href="#popup-reg" class="popup-entrance__link popup-link">Зарегистрироваться</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup-reg" class="popup-entrance">
+        <div class="popup-entrance__body">
+            <div class="popup-entrance__content">
+                <div class="popup-entrance__header">
+                    <div class="popup-entrance__close">
+                        <a href="#" class="popup-entrance__close-link close-popup"><span class="popup-entrance__close-icon"></span></a>
+                    </div>
+                    <h2 class="popup-entrance__title">Регистрация</h2>
+                </div>
+                <div class="popup-entrance__form-entrance">
+                    <form class="form-entrance" action="#" method="post">
+                        <div class="form-entrance__imputs">
+                            <label class="form-entrance__label form-entrance__label-login"
+                                for="#entrance-login"></label>
+                            <input class="form-entrance__input form-entrance__input-login" id="entrance-login"
+                                type="text" placeholder="Логин" tabindex="1" />
+                            <label class="form-entrance__label form-entrance__label-email"
+                                for="#entrance-email"></label>
+                            <input class="form-entrance__input form-entrance__input-email" id="entrance-email"
+                                type="text" placeholder="Почта" tabindex="2" />
+                            <label class="form-entrance__lebel form-entrance__label-password"
+                                for="#entrance-password"></label>
+                            <input class="form-entrance__input form-entrance__input-password" id="entrance-password"
+                                type="password" placeholder="Пароль" tabindex="3" />
+                            <label class="form-entrance__lebel form-entrance__label-password"
+                                for="#entrance-password-again"></label>
+                            <input class="form-entrance__input form-entrance__input-password"
+                                id="entrance-password-again" type="password" placeholder="Пароль ещё раз"
+                                tabindex="4" />
+                        </div>
+                        <div class="form-entrance__checkbox">
+                            <div class="checkbox">
+                                <label class="checkbox__label">
+                                    <input class="checkbox__input" type="checkbox" tabindex="5" />
+                                    <span class="checkbox__span-fake"></span>
+                                    <span class="checkbox__span">Согласен с <a href="#" class="checkbox__link checkbox__link-rules">"Правилами сервиса".</a></span>
+                                </label>
+                            </div>
+                        </div>
+                        <label class="form-entrance__label form-entrance__label">
+                            <input class="form-entrance__button" id="entrance-button" type="button" value="Зарегистрироваться"
+                                tabindex="5" />
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
