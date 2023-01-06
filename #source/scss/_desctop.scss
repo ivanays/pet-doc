@@ -1,12 +1,11 @@
 body.lock {
-  overflow: hidden;
+    overflow: hidden;
 }
 .header {
     width: 100%;
-    height: 100px;
+    min-height: 100px;
     background-color: $c-2-948474;
     background-size: cover;
-    //padding: 0 15px 0 15px;
     margin-bottom: 52px;
     // .header__inner
     &__inner {
@@ -17,6 +16,13 @@ body.lock {
     }
     // .header__logo
     &__logo {
+    }
+    // .header__burger-link
+    &__burger-link {
+        display: none;
+    }
+    // .header__burger-span
+    &__burger-span {
     }
     // .header__main
     &__main {
@@ -115,15 +121,16 @@ body.lock {
     width: 100%;
     margin-bottom: 52px;
 }
+
+// scss для index.html --------------------------------------------------------------------------------------
 .banner {
     background-color: $c-5-CCD6B2;
     width: 100%;
     height: 356px;
-    padding-left: 269px;
-    padding-right: 232px;
     margin-bottom: 52px;
     // .banner__body
     &__body {
+        padding: 0 331px;
     }
     // .banner__inner
     &__inner {
@@ -153,6 +160,8 @@ body.lock {
     }
     // .banner__img
     &__img {
+        width: 220px;
+        height: 275px;
     }
 }
 .content {
@@ -168,7 +177,7 @@ body.lock {
     // .content__ads
     &__ads {
         width: 850px;
-        height: 454px;
+        height: 100%;
     }
 }
 .article {
@@ -219,6 +228,12 @@ body.lock {
 }
 .title {
 }
+.suptitle {
+    font-weight: $fw-700;
+    font-size: $fz-24;
+    text-align: center;
+    margin-bottom: 30px;
+}
 .text {
 }
 .ads {
@@ -258,7 +273,6 @@ body.lock {
         grid-column-end: 9;
     }
 }
-
 .advert {
     // .advert__inner
     &__inner {
@@ -277,35 +291,375 @@ body.lock {
     &__content-image {
         width: 547px;
     }
-    // .advent__title
+    // .advert__title
     &__title {
         font-weight: $fw-700;
         font-size: $fz-17;
         line-height: $lh-20;
         margin-bottom: 14px;
     }
-    // .advent__title-red
+    // .advert__title-red
     &__title-red {
         color: $c-9-B40909;
     }
-    // .advent__body
+    // .advert__body
     &__body {
         overflow: hidden;
     }
-    // .advent__text
+    // .advert__text
     &__text {
         line-height: $lh-20;
     }
-    // .advent__image
+    // .advert__image
     &__image {
         align-self: center;
     }
-    // .advent__img
+    // .advert__img
     &__img {
         width: 123px;
         height: 92px;
     }
 }
+//----------------------------------------------------------------------------------------------------------------
+
+// scss для personal.html ----------------------------------------------------------------------------------------
+
+.personal {
+    background-color: $c-5-CCD6B2;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 52px;
+    // .personal__body
+    &__body {
+    }
+    // .personal__inner
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 150px;
+    }
+    // .personal__profile
+    &__profile {
+        min-width: 204px;
+        height: 71px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    // .personal__avatar
+    &__avatar {
+    }
+    // .personal__img
+    &__img {
+        width: 71px;
+        height: 71px;
+        border-radius: 10px;
+    }
+    // .personal__info
+    &__info {
+    }
+    // .personal__login
+    &__login {
+        font-weight: $fw-600;
+        font-size: $fz-24;
+        margin-bottom: 7px;
+    }
+    // .personal__id
+    &__id {
+        font-weight: $fw-500;
+    }
+    // .personal__title
+    &__title {
+        font-weight: $fw-700;
+        font-size: $fz-36;
+    }
+}
+.buttons {
+    // .buttons__links
+    &__links {
+        width: 250px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    // .buttons__link
+    &__link {
+        display: inline-block;
+        width: 110px;
+        height: 29px;
+        border-radius: 7px;
+        text-align: center;
+        color: $c-1-43291F;
+        font-weight: $fw-700;
+        font-size: $fz-12;
+        line-height: 26px;
+    }
+    // .buttons__link-profile
+    &__link-profile {
+        background-color: $c-3-BBB1A8;
+        border: 2px solid $c-3-BBB1A8;
+    }
+    // .buttons__link-volonter
+    &__link-volonter {
+        border: 2px solid $c-3-BBB1A8;
+    }
+    // .buttons__link-add
+    &__link-add {
+        background-color: $c-4-ADC178;
+        border: 2px solid $c-4-ADC178;
+    }
+    // .buttons__link-preview
+    &__link-preview {
+        border: 2px solid $c-4-ADC178;
+    }
+}
+.content-personal {
+    // .content-personal__top
+    &__top {
+        margin-bottom: 52px;
+    }
+    // .content-personal__top-inner
+    &__top-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    // .content-personal__reminder
+    &__reminder {
+    }
+    // .content-personal__advert
+    &__advert {
+    }
+    // .content-personal__mypets
+    &__mypets {
+    }
+}
+.reminder {
+    width: 520px;
+    height: 275px;
+    // .reminder__inner
+    &__inner {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    // .reminder__body
+    &__body {
+        width: 100%;
+    }
+    // .reminder__suptitle
+    &__suptitle {
+    }
+    // .reminder__list
+    &__list {
+    }
+    // .reminder__item
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 3px;
+    }
+    &__item:last-child {
+        margin-bottom: 0;
+    }
+    // .reminder__link
+    &__link {
+    }
+    // .reminder__link-block
+    &__link-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 345px;
+    }
+    // .reminder__link-del
+    &__link-del {
+    }
+    // .reminder__span
+    &__span {
+        font-weight: $fw-500;
+        font-size: $fz-13;
+        color: $c-1-43291F;
+        line-height: $lh-20;
+    }
+    // .reminder__span-topic
+    &__span-topic {
+        // display: inline;
+        // text-align: left;
+    }
+    // .reminder__span-time
+    &__span-time {
+        // display: inline;
+        // text-align: right;
+    }
+    // .reminder__span-del
+    &__span-del {
+        display: inline-block;
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 13px;
+        height: 13px;
+    }
+    &__span-del::before,
+    &__span-del::after {
+        content: "";
+        left: 0;
+        position: absolute;
+        height: 3%;
+        width: 100%;
+        border: 1px solid $c-2-948474;
+    }
+
+    &__span-del::before {
+        top: 50%;
+        transform: rotate(-45deg) translate(0px, -50%);
+    }
+
+    &__span-del::after {
+        bottom: 50%;
+        transform: rotate(45deg) translate(0px, 50%);
+    }
+}
+.advert-add {
+    width: 740px;
+    height: 275px;
+    // .advert-add__suptitle
+    &__suptitle {
+    }
+    // .advert-add__inner
+    &__inner {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    // .advert-add__inner-image
+    &__inner-image {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    // .advert-add__content
+    &__content {
+        width: 507px;
+    }
+    // .advert-add__content-image
+    &__content-image {
+    }
+    // .advert-add__body
+    &__body {
+        width: 100%;
+    }
+    // .advert-add__title
+    &__title {
+        font-weight: $fw-700;
+        font-size: $fz-17;
+        margin-bottom: 12px;
+    }
+    // .advert-add__text
+    &__text {
+        font-weight: $fw-500;
+        line-height: $lh-20;
+    }
+    // .advert-add__image
+    &__image {
+    }
+    // .advert-add__img
+    &__img {
+        width: 123px;
+        height: 92px;
+        border-radius: 10px;
+    }
+}
+.title {
+}
+.text {
+}
+.mypets {
+    width: 100%;
+    height: 225px;
+    // .mypets__suptitle
+    &__suptitle {
+    }
+    // .mypets__body
+    &__body {
+    }
+    // .mypets__inner
+    &__inner {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    // .mypets__list
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 100px;
+        //row-gap: 50px;
+        column-gap: 92px;
+    }
+    // .mypets__item
+    &__item {
+        width: 199px;
+        height: 100px;
+    }
+    // .mypets__item-1
+    &__item-1 {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    // .mypets__item-2
+    &__item-2 {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    // .mypets__item-3
+    &__item-3 {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+    // .mypets__link
+    &__link {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    // .mypets__avatar
+    &__avatar {
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+    }
+    // .mypets__nic
+    &__nic {
+        margin-bottom: 11px;
+        font-weight: $fw-700;
+        font-size: $fz-17;
+        color: $c-1-43291F;
+    }
+    // .mypets__id
+    &__id {
+        font-weight: $fw-500;
+        color: $c-1-43291F;
+    }
+}
+
+//-----------------------------------------------------------------------------------------------------------------
+
 .footer {
     width: 100%;
     height: 110px;
@@ -347,10 +701,12 @@ body.lock {
     }
     // .menu-footer__img
     &__img {
+        width: 30px;
+        height: 30px;
     }
 }
 
-// Пупапы для входа и регистрации.
+// Пупапы для входа и регистрации на index.html
 .popup-entrance {
     position: fixed;
     width: 100%;
@@ -406,7 +762,7 @@ body.lock {
         position: absolute;
         height: 10%;
         width: 100%;
-        border: 1px solid $c-1-43291F;
+        border: 1px solid $c-2-948474;
     }
 
     &__close-icon::before {
@@ -554,7 +910,6 @@ body.lock {
         color: $c-1-43291F;
         cursor: pointer;
     }
-    
 }
 .checkbox {
     width: 324px;
@@ -621,23 +976,5 @@ body.lock {
     }
     // .checkbox__link-rules
     &__link-rules {
-    }
-}
-
-@media (max-width: 1290px) {
-    .header {
-        width: 1290px;
-    }
-    .main {
-        width: 1290px;
-    }
-    .footer {
-        width: 1290px;
-    }
-    .container {
-        padding: 0 15px;
-    }
-    .content__article {
-        margin-right: 30px;
     }
 }
