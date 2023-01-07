@@ -161,4 +161,66 @@
         font-size: $fz-13;
         color: $c-1-43291F;
     }
+
+    // SCSS for personal.html
+    .personal {
+        height: 204px;
+        padding-top: 62px;
+    }
+    .personal__block-title {
+        display: block;
+        position: absolute;
+        width: 630px;
+        height: 36px;
+        left: calc((100vw - 630px) / 2);
+        top: 182px;
+    }
+    .personal__title {
+        text-align: center;
+    }
+    .personal__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 142px;
+    }
+    .content-personal__top-inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .reminder {
+        width: 630px;
+        height: 271px;
+        margin-bottom: 52px;
+    }
+    .reminder__link-block {
+        width: 450px;
+    }
+    .advert-add {
+        width: 630px;
+        height: 278px;
+    }
+    .advert-add__content {
+        width: 397px;
+    }
+    .mypets {
+    height: 281px;
+    }
+
+    .mypets__inner {
+        width: 100%;
+        height: 157px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .mypets__list {
+        align-self: start;
+    }
+    .mypets__item-3 {
+        display: none;
+    }
 }

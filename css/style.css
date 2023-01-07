@@ -1335,6 +1335,91 @@ body.lock {
     font-size: 13px;
     color: #43291F;
   }
+  .personal {
+    height: 204px;
+    padding-top: 62px;
+  }
+  .personal__block-title {
+    display: block;
+    position: absolute;
+    width: 630px;
+    height: 36px;
+    left: calc((100vw - 630px) / 2);
+    top: 182px;
+  }
+  .personal__title {
+    text-align: center;
+  }
+  .personal__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 142px;
+  }
+  .content-personal__top-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .reminder {
+    width: 630px;
+    height: 271px;
+    margin-bottom: 52px;
+  }
+  .reminder__link-block {
+    width: 450px;
+  }
+  .advert-add {
+    width: 630px;
+    height: 278px;
+  }
+  .advert-add__content {
+    width: 397px;
+  }
+  .mypets {
+    height: 281px;
+  }
+  .mypets__inner {
+    width: 100%;
+    height: 157px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mypets__list {
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+  .mypets__item-3 {
+    display: none;
+  }
 }
 @media (max-width: 768px) {
   .header {
@@ -1633,5 +1718,133 @@ body.lock {
   .checkbox__link {
     font-weight: 400;
     font-size: 11px;
+  }
+  .personal {
+    height: 235px;
+    padding-top: 80px;
+    margin-bottom: 45px;
+  }
+  .personal__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 124px;
+  }
+  .personal__block-title {
+    display: block;
+    position: absolute;
+    width: 288px;
+    height: 28px;
+    left: calc((100vw - 288px) / 2);
+    top: 207px;
+  }
+  .personal__title {
+    font-size: 28px;
+  }
+  .content-personal__top {
+    margin-bottom: 45px;
+  }
+  .reminder {
+    width: 288px;
+    height: 234px;
+    margin-bottom: 45px;
+  }
+  .reminder__item {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .buttons__links {
+    width: 228px;
+  }
+  .reminder__link-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 114px;
+  }
+  .suptitle {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .advert-add {
+    width: 288px;
+    height: 456px;
+  }
+  .advert-add__inner-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .advert-add__content {
+    width: 228px;
+  }
+  .advert-add__img {
+    width: 228px;
+    height: 170px;
+  }
+  .advert-add__content {
+    margin-bottom: 8px;
+  }
+  .mypets {
+    height: 257px;
+  }
+  .mypets__inner {
+    width: 100%;
+    height: 157px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mypets__list {
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+  .mypets__item-2 {
+    display: none;
+  }
+  .mypets__item-3 {
+    display: none;
   }
 }

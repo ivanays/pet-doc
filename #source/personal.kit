@@ -16,7 +16,7 @@
             <div class="header__inner">
                 <div class="header__logo">
                     <div class="logo">
-                        <a href="#" class="logo__link link">
+                        <a href="index.html" class="logo__link link">
                             <img src="/img/logo-header.png" alt="Лого" class="logo__img">
                         </a>
                     </div>
@@ -29,7 +29,7 @@
                         <div class="header__left">
                             <nav class="menu-header">
                                 <ul class="menu-header__list">
-                                    <li class="menu-header__item  menu-header__item-none"><a href="/personal.html"
+                                    <li class="menu-header__item  menu-header__item-none"><a href="#"
                                             class="menu-header__link link">Настройки</a>
                                     </li>
                                     <li class="menu-header__item"><a href="personal.html"
@@ -64,15 +64,15 @@
                 <div class="header__exit">
                     <nav class="menu-header">
                         <ul class="menu-header__list">
-                            <li class="menu-header__item"><a href="#"
-                                    class="menu-header__link link popup-link">Вход</a></li>
+                            <li class="menu-header__item"><a href="index.html"
+                                    class="menu-header__link link">Выход</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </div>
     </header>
-    <!-- <main class="main lock-padding">
+    <main class="main lock-padding">
         <section class="personal">
             <div class="container">
                 <div class="personal__body">
@@ -86,7 +86,9 @@
                                 <p class="personal__id">ID: 6326487632</p>
                             </div>
                         </div>
-                        <h2 class="personal__title">Личный кабинет</h2>
+                        <div class="personal__block-title">
+                            <h2 class="personal__title">Личный кабинет</h2>
+                        </div>
                         <div class=" buttons__links">
                             <div class=" buttons__link">
                                 <a href="#" class=" buttons__link buttons__link-profile">Профиль</a>
@@ -147,15 +149,14 @@
                                         <h3 class="advert-add__suptitle suptitle">Объявление</h3>
                                         <div class="advert-add__inner-image">
                                             <div class="advert-add__image">
-                                                <img src="/img/avert-img1.png" alt="Питомец" class="advert-add__img">
+                                                <img src="/img/avert-img.png" alt="Питомец" class="advert-add__img">
                                             </div>
                                             <div class="advert-add__content">
                                                 <div class="advert-add__body">
-                                                    <h4 class="advert-add__title title">Куплю:</h4>
+                                                    <h4 class="advert-add__title title">Продам:</h4>
                                                     <p class="advert-add__text text">
-                                                        Пропала собака (кобель) около двух месяц назад, присутствует
-                                                        ошейник с кличкой и номером телефона! Пропал в районе озера
-                                                        Большой Кисегач. Просим вернуть собаку за вознаграждение
+                                                        Продам щенят. Порода русская борзая 1,5 месяца, окрас белый. Клеймо стоит. Родители победители выставок 2020 и 2021
+                                                        года
                                                     </p>
                                                 </div>
                                             </div>
@@ -222,7 +223,7 @@
                 </div>
             </div>
         </section>
-    </main> -->
+    </main> 
     <footer class="footer lock-padding">
         <div class="container">
             <div class="footer__inner">
@@ -262,6 +263,36 @@
             </div>
         </div>
     </footer>
+    <div id="popup-burger" class="popup-entrance">
+        <div class="popup-entrance__body popup-entrance__body-popup-burger">
+            <div class="popup-entrance__content popup-entrance__content-popup-burger">
+                <div class="popup-entrance__header-popup-burger">
+                    <div class="popup-entrance__close-popup-burger">
+                        <a href="#" class="popup-entrance__close-link-popup-burger close-popup"><span
+                                class="popup-entrance__close-icon-popup-burger"></span></a>
+                    </div>
+                </div>
+                <div class="popup-entrance__menu-header-popup">
+                    <nav class="menu-header-popup">
+                        <ul class="menu-header-popup__list">
+                            <li class="menu-header-popup__item">
+                                <a href="#" class="menu-header-popup__link link">Подсказки</a>
+                            </li>
+                            <li class="menu-header-popup__item">
+                                <a href="#" class="menu-header-popup__link link">Статьи</a>
+                            </li>
+                            <li class="menu-header-popup__item">
+                                <a href="#" class="menu-header-popup__link link">Помощь</a>
+                            </li>
+                            <li class="menu-header-popup__item">
+                                <a href="#" class="menu-header-popup__link link">Настройки</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 

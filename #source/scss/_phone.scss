@@ -1,3 +1,9 @@
+// @media (min-width: 320px) {
+//     .header {
+//         width: 100%;
+//     }
+// }
+
 @media (max-width: 768px) {
     .header {
         min-width: 320px;
@@ -158,72 +164,164 @@
     .form-entrance {
         width: 230px;
     }
-        .form-entrance__imputs {
-            margin-bottom: 15px;
-        }
-        .form-entrance__input {
-            width: 230px;
-            height: 33px;
-            border-radius: 8px;
-            margin-bottom: 12px;
-            padding: 10px 10px 10px 44px;
-            font-weight: $fw-400;
-            font-size: $fz-13;
-            line-height: $lh-15;
-        }
-        .form-entrance__input:last-child {
-            margin-bottom: 0;
-        }
-        .form-entrance__input::before {
-            content: "";
-            position: absolute;
-        }
-        ::-webkit-input-placeholder {
-            font-size: 13px;
-            line-height: $lh-15;
-        }
-        /* Firefox 19+ */
-        ::-moz-placeholder {
-            font-size: 13px;
-            line-height: $lh-15;
-        }
-        /* Firefox 18- */
-        :-moz-placeholder {
-            font-size: 13px;
-            line-height: $lh-15;
-        }
-        :-ms-input-placeholder {
-            font-size: 13px;
-            line-height: $lh-15;
-        }
-        .form-entrance__input-login {
-            background-image: url(/img/icon-user.png);
-            background-position: left 12px top 6px;
-        }
-        .form-entrance__input-email {
-            background-image: url(/img/icon-mail_small.png);
-            background-position: left 12px top 5px;
-        }
-        .form-entrance__input-password {
-            background-image: url(/img/icon-password.png);
-            background-position: left 15px top 7px;
-        }
-        .form-entrance__checkbox {
-            width: 230px;
-            margin-bottom: 27px;
-        }
-        .form-entrance__button {
-            width: 230px;
-            height: 33px;
-            background-color: $c-4-ADC178;
-            border-radius: 8px;
-        }
-        .checkbox__span {
-            font-weight: $fw-400;
-            font-size: 11px;
-        }
-        .checkbox__link {
-            font-weight: $fw-400;
-            font-size: 11px;
-        }
+    .form-entrance__imputs {
+        margin-bottom: 15px;
+    }
+    .form-entrance__input {
+        width: 230px;
+        height: 33px;
+        border-radius: 8px;
+        margin-bottom: 12px;
+        padding: 10px 10px 10px 44px;
+        font-weight: $fw-400;
+        font-size: $fz-13;
+        line-height: $lh-15;
+    }
+    .form-entrance__input:last-child {
+        margin-bottom: 0;
+    }
+    .form-entrance__input::before {
+        content: "";
+        position: absolute;
+    }
+    ::-webkit-input-placeholder {
+        font-size: 13px;
+        line-height: $lh-15;
+    }
+    /* Firefox 19+ */
+    ::-moz-placeholder {
+        font-size: 13px;
+        line-height: $lh-15;
+    }
+    /* Firefox 18- */
+    :-moz-placeholder {
+        font-size: 13px;
+        line-height: $lh-15;
+    }
+    :-ms-input-placeholder {
+        font-size: 13px;
+        line-height: $lh-15;
+    }
+    .form-entrance__input-login {
+        background-image: url(/img/icon-user.png);
+        background-position: left 12px top 6px;
+    }
+    .form-entrance__input-email {
+        background-image: url(/img/icon-mail_small.png);
+        background-position: left 12px top 5px;
+    }
+    .form-entrance__input-password {
+        background-image: url(/img/icon-password.png);
+        background-position: left 15px top 7px;
+    }
+    .form-entrance__checkbox {
+        width: 230px;
+        margin-bottom: 27px;
+    }
+    .form-entrance__button {
+        width: 230px;
+        height: 33px;
+        background-color: $c-4-ADC178;
+        border-radius: 8px;
+    }
+    .checkbox__span {
+        font-weight: $fw-400;
+        font-size: 11px;
+    }
+    .checkbox__link {
+        font-weight: $fw-400;
+        font-size: 11px;
+    }
+
+    // SCSS for personal.html
+    .personal {
+        height: 235px;
+        padding-top: 80px;
+        margin-bottom: 45px;
+    }
+    .personal__inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 124px;
+    }
+    .personal__block-title {
+        display: block;
+        position: absolute;
+        width: 288px;
+        height: 28px;
+        left: calc((100vw - 288px) / 2);
+        top: 207px;
+    }
+    .personal__title {
+        font-size: $fz-28;
+    }
+    // .content-personal__top
+    .content-personal__top {
+        margin-bottom: 45px;
+    }
+    .reminder {
+        width: 288px;
+        height: 234px;
+        margin-bottom: 45px;
+    }
+    .reminder__item {
+        align-items: flex-start;
+    }
+    .buttons__links {
+        width: 228px;
+    }
+    .reminder__link-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 114px;
+    }
+    .suptitle {
+        font-size: $fz-22;
+        margin-bottom: 20px;
+    }
+    .advert-add {
+        width: 288px;
+        height: 456px;
+    }
+    .advert-add__inner-image {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .advert-add__content {
+        width: 228px;
+    }
+    .advert-add__img {
+        width: 228px;
+        height: 170px;
+    }
+    .advert-add__content {
+        margin-bottom: 8px;
+    }
+    .mypets {
+    height: 257px;
+    }
+
+    .mypets__inner {
+        width: 100%;
+        height: 157px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .mypets__list {
+        align-self: start;
+    }
+    .mypets__item-2 {
+        display: none;
+    }
+    .mypets__item-3 {
+        display: none;
+    }
 }
