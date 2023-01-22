@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet DOC</title>
     <link rel="stylesheet" href="/css/style.css">
-    <script defer src="/js/script.js"></script>
+    <script defer src="/js/popup.js"></script>
 </head>
 
 <body>
@@ -64,7 +64,7 @@
                 <div class="header__exit">
                     <nav class="menu-header">
                         <ul class="menu-header__list">
-                            <li class="menu-header__item"><a href="index.html"
+                            <li class="menu-header__item"><a id="logout" href="#"
                                     class="menu-header__link link">Выход</a></li>
                         </ul>
                     </nav>
@@ -79,11 +79,11 @@
                     <div class="personal__inner">
                         <div class="personal__profile">
                             <div class="personal__avatar">
-                                <img src="/img/avatarka.png" alt="Аватар" class="personal__img">
+                                <img src="/img/avatarka.png" alt="Аватар" class="personal__img" id="user-avatar">
                             </div>
                             <div class="personal__info">
-                                <h3 class="personal__login">Логин</h3>
-                                <p class="personal__id">ID: 6326487632</p>
+                                <h3 class="personal__login" id="user-login"></h3>
+                                <p class="personal__id"><span id="user-id"></span></p>
                             </div>
                         </div>
                         <div class="personal__block-title">
@@ -293,7 +293,14 @@
             </div>
         </div>
     </div>
-
+    
+    <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-auth-compat.js"></script>
+    <script src="/js/fb-config.js"></script>
+    <!-- <script src="/js/logout.js"></script> -->
+    <script src="/js/account.js"></script>
+    
 </body>
 
 </html>

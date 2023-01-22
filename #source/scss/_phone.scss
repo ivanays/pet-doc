@@ -7,14 +7,14 @@
 @media (max-width: 768px) {
     .header {
         min-width: 320px;
-        min-height: 132px;
+        min-height: 120px;
         margin-bottom: 45px;
     }
     .container {
-        width: 288px;
+        width: 290px;
     }
     .header__inner {
-        height: 84px;
+        height: 70px;
     }
     .header__main {
         width: 113px;
@@ -22,23 +22,24 @@
     .header__center {
         display: block;
         position: absolute;
-        width: 288px;
-        height: 27px;
-        left: calc((100vw - 288px) / 2);
-        top: 77px;
+        width: 290px;
+        height: 30px;
+        left: calc((100vw - 290px) / 2);
+        top: 70px;
     }
     .form-search {
-        width: 288px;
+        width: 290px;
     }
     .form-search__input {
-        width: 288px;
+        width: 290px;
+        height: 30px;
     }
     .main {
         margin-bottom: 45px;
     }
     .banner {
-        height: 298px;
-        padding-top: 30px;
+        height: 292px;
+        padding-top: 25px;
         padding-bottom: 30px;
         margin-bottom: 45px;
     }
@@ -53,7 +54,7 @@
         align-items: center;
     }
     .banner__image {
-        margin-bottom: 20px;
+        margin-bottom: 22px;
     }
     .banner__img {
         width: 100px;
@@ -82,18 +83,22 @@
         margin-bottom: 45px;
     }
     .article {
-        width: 288px;
-        height: 493px;
+        width: 290px;
+        height: 437px;
+    }
+    .article__text {
+        line-height: $lh-17;
     }
     .content__ads {
-        width: 288px;
+        width: 290px;
         height: 100%;
     }
     .ads__body {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 260px 179px 179px;
-        row-gap: 34px;
+        //grid-template-rows: 220px 115px 149px;
+        grid-template-rows: auto auto auto;
+        row-gap: 45px;
         column-gap: 0px;
     }
     .ads__block-long {
@@ -115,7 +120,14 @@
         grid-column-end: 4;
     }
     .advert__content-image {
-        width: 288px;
+        width: 290px;
+    }
+    .advert__title {
+        line-height: $lh-17;
+        margin-bottom: 11px;
+    }
+    .advert__text {
+        line-height: $lh-17;
     }
     .advert__img {
         display: none;
@@ -124,10 +136,10 @@
         display: none;
     }
     .footer {
-        height: 72px;
+        height: 70px;
     }
     .footer__inner {
-        height: 72px;
+        height: 70px;
     }
     .footer__right {
         width: 112px;
@@ -138,18 +150,23 @@
     }
     .popup-entrance__body-popup-burger {
         top: 76px;
-        left: calc((100vw - 288px) / 2);
-    }
-    .popup-entrance__content-popup-burger {
-        width: 288px;
+        left: calc((100vw - 290px) / 2);
     }
     .popup-entrance__content {
-        width: 288px;
-        padding: 30px 30px 47px 30px;
+        width: 290px;
+        padding: 20px 20px 50px 20px;
+        border-radius: 8px;
+    }
+    .popup-entrance__content-popup-burger {
+        width: 290px;
+        margin-top: -5px;
+        background-color: $c-7-F3F1E7;
+        width: 290px;
+        padding: 20px 20px 30px 30px;
         border-radius: 8px;
     }
     .popup-entrance__header {
-        margin-bottom: 30px;
+        margin-bottom: 45px;
     }
     .popup-entrance__close {
         height: 13px;
@@ -159,17 +176,17 @@
         font-size: $fz-28;
     }
     .popup-entrance__footer {
-        margin-top: 27px;
+        margin-top: 37px;
     }
     .form-entrance {
-        width: 230px;
+        width: 250px;
     }
     .form-entrance__imputs {
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
     .form-entrance__input {
-        width: 230px;
-        height: 33px;
+        width: 250px;
+        height: 32px;
         border-radius: 8px;
         margin-bottom: 12px;
         padding: 10px 10px 10px 44px;
@@ -185,21 +202,25 @@
         position: absolute;
     }
     ::-webkit-input-placeholder {
-        font-size: 13px;
+        font-size: 11px;
+        font-weight: $fw-300;
         line-height: $lh-15;
     }
     /* Firefox 19+ */
     ::-moz-placeholder {
-        font-size: 13px;
+        font-size: 11px;
+        font-weight: $fw-300;
         line-height: $lh-15;
     }
     /* Firefox 18- */
     :-moz-placeholder {
-        font-size: 13px;
+        font-size: 11px;
+        font-weight: $fw-300;
         line-height: $lh-15;
     }
     :-ms-input-placeholder {
-        font-size: 13px;
+        font-size: 11px;
+        font-weight: $fw-300;
         line-height: $lh-15;
     }
     .form-entrance__input-login {
@@ -215,14 +236,14 @@
         background-position: left 15px top 7px;
     }
     .form-entrance__checkbox {
-        width: 230px;
-        margin-bottom: 27px;
+        width: 250px;
+        margin-bottom: 34px;
     }
     .form-entrance__button {
-        width: 230px;
-        height: 33px;
+        width: 250px;
+        height: 30px;
         background-color: $c-4-ADC178;
-        border-radius: 8px;
+        border-radius: 7px;
     }
     .checkbox__span {
         font-weight: $fw-400;
@@ -231,6 +252,27 @@
     .checkbox__link {
         font-weight: $fw-400;
         font-size: 11px;
+    }
+    .hint {
+        left: 0px;
+    }
+    .hint-login {
+        left: 5px;
+    }
+    .hint-email {
+        left: 5px;
+    }
+    .hint-pass1 {
+        left: 5px;
+    }
+    .hint-pass2 {
+        left: 5px;
+    }
+    .hint-ch-inter {
+        left: 5px;
+    }
+    .hint-ch-reg {
+        left: 5px;
     }
 
     // SCSS for personal.html
@@ -276,7 +318,7 @@
         align-items: flex-start;
     }
     .reminder__span-time {
-        padding-left: 20px;
+        padding-left: 0px;
     }
     .buttons__links {
         width: 228px;
@@ -293,8 +335,8 @@
         margin-bottom: 20px;
     }
     .advert-add {
-        width: 288px;
-        height: 456px;
+        width: 290px;
+        height: 458px;
     }
     .advert-add__inner-image {
         display: flex;
@@ -310,10 +352,13 @@
         height: 170px;
     }
     .advert-add__content {
-        margin-bottom: 8px;
+        margin-bottom: 18px;
+    }
+    .advert-add__text {
+        line-height: $lh-17;
     }
     .mypets {
-    height: 257px;
+        height: 257px;
     }
 
     .mypets__inner {

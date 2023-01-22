@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet DOC</title>
+    <link rel="shortcut icon" href="#">
     <link rel="stylesheet" href="/css/style.css">
-    <script defer src="/js/script.js"></script>
+    <script defer src="/js/popup.js"></script>
+    <script defer src="/js/validate.js"></script>
 </head>
 
 <body>
@@ -194,7 +196,8 @@
                         <ul class="menu-footer__list">
                             <li class="menu-footer__item">
                                 <a href="#" class="menu-footer__link link">
-                                    <img src="/img/icon-telegram.png" alt="Telegram" class="menu-footer__img menu-footer__img-telegram">
+                                    <img src="/img/icon-telegram.png" alt="Telegram"
+                                        class="menu-footer__img menu-footer__img-telegram">
                                 </a>
                             </li>
                             <li class="menu-footer__item">
@@ -204,7 +207,8 @@
                             </li>
                             <li class="menu-footer__item">
                                 <a href="#" class="menu-footer__link link">
-                                    <img src="/img/icon-mail.png" alt="E-mail" class="menu-footer__img menu-footer__img-mail">
+                                    <img src="/img/icon-mail.png" alt="E-mail"
+                                        class="menu-footer__img menu-footer__img-mail">
                                 </a>
                             </li>
                         </ul>
@@ -225,29 +229,32 @@
                     <h2 class="popup-entrance__title">Вход</h2>
                 </div>
                 <div class="popup-entrance__form-entrance">
-                    <form class="form-entrance" action="#" method="post">
+                    <form id="form-inter" name="form-inter" class="form-entrance" action="#" method="post">
                         <div class="form-entrance__imputs">
+                            <div class="form-entrance__error" id="error-inter"></div>
+                            <div class="hint none" id="hint-error-inter"></div>
                             <label class="form-entrance__label form-entrance__label-email"
-                                for="#entrance-email"></label>
-                            <input class="form-entrance__input form-entrance__input-email" id="entrance-email"
-                                type="text" placeholder="Почта" tabindex="1" />
+                                for="#forminteremail"></label>
+                            <input class="form-entrance__input form-entrance__input-email" id="forminteremail"
+                                name="forminteremail" type="email" placeholder="Почта" tabindex="1" />
                             <label class="form-entrance__lebel form-entrance__label-password"
-                                for="#entrance-password"></label>
-                            <input class="form-entrance__input form-entrance__input-password" id="entrance-password"
-                                type="password" placeholder="Пароль" tabindex="2" />
+                                for="#forminterpassword"></label>
+                            <input class="form-entrance__input form-entrance__input-password" id="forminterpassword"
+                                name="forminterpassword" type="password" placeholder="Пароль" tabindex="2" />
                         </div>
                         <div class="form-entrance__checkbox">
                             <div class="checkbox">
                                 <label class="checkbox__label">
-                                    <input class="checkbox__input" type="checkbox" tabindex="4" />
+                                    <input id="forminterchremme" name="forminterchremme" class="checkbox__input"
+                                        type="checkbox" tabindex="3" />
                                     <span class="checkbox__span-fake"></span>
                                     <span class="checkbox__span">Запомнить&nbsp;меня</span>
                                 </label>
                             </div>
                         </div>
                         <label class="form-entrance__label form-entrance__label">
-                            <input class="form-entrance__button" id="entrance-button" type="button" value="Войти"
-                                tabindex="5" />
+                            <button class="form-entrance__button" id="formintersubmit" name="formintersubmit"
+                                value="inter" type="submit" tabindex="4">Войти</button>
                         </label>
                     </form>
                 </div>
@@ -273,39 +280,53 @@
                     <h2 class="popup-entrance__title">Регистрация</h2>
                 </div>
                 <div class="popup-entrance__form-entrance">
-                    <form class="form-entrance" action="#" method="post">
+                    <form id="form-reg" name="form-reg" class="form-entrance" action="#" method="post">
                         <div class="form-entrance__imputs">
-                            <label class="form-entrance__label form-entrance__label-login"
-                                for="#entrance-login"></label>
-                            <input class="form-entrance__input form-entrance__input-login" id="entrance-login"
-                                type="text" placeholder="Логин" tabindex="1" />
-                            <label class="form-entrance__label form-entrance__label-email"
-                                for="#entrance-email"></label>
-                            <input class="form-entrance__input form-entrance__input-email" id="entrance-email"
-                                type="text" placeholder="Почта" tabindex="2" />
+                            <div class="form-entrance__error" id="error-reg"></div>
+                            <div class="form-entrance__error form-entrance__error-login" id="error-reg-login"></div>
+                            <label class="form-entrance__label form-entrance__label-login" for="#formreglogin"></label>
+                            <input class="form-entrance__input form-entrance__input-login form-entrance__input-penta" id="formreglogin"
+                                name="formreglogin" type="text" placeholder="Логин" tabindex="1" />
+                            <div class="form-entrance__error form-entrance__error-email" id="error-reg-email"></div>
+                            <label class="form-entrance__label form-entrance__label-email" for="#formregemail"></label>
+                            <input class="form-entrance__input form-entrance__input-email" id="formregemail"
+                                name="formregemail" type="email" placeholder="Почта" tabindex="2" />
+                            <div class="form-entrance__error form-entrance__error-password" id="error-reg-password"></div>
                             <label class="form-entrance__lebel form-entrance__label-password"
-                                for="#entrance-password"></label>
-                            <input class="form-entrance__input form-entrance__input-password" id="entrance-password"
-                                type="password" placeholder="Пароль" tabindex="3" />
+                                for="#formregpassword"></label>
+                            <input class="form-entrance__input form-entrance__input-password" id="formregpassword"
+                                name="formregpassword" type="password" placeholder="Пароль" tabindex="3" />
+                                <div class="hint-inner">
+                                    <div class="hint none" id="hint-password">
+                                        <p class="hint__ru">Пароль&nbsp;от&nbsp;6&nbsp;символов.&nbsp;Минимум
+                                        </p>
+                                        <p class="hint__ru">
+                                            по&nbsp;одному&nbsp;из&nbsp;каждой&nbsp;группы: </p>
+                                        <p class="hint__en">
+                                            [A-Z],&nbsp;[a-z],&nbsp;[0-&nbsp;9],&nbsp;[!@#$%^&amp;*]</p>
+                                    </div>
+                                </div>
+                            <div class="form-entrance__error form-entrance__error-password-again" id="error-reg-password-again"></div>
                             <label class="form-entrance__lebel form-entrance__label-password"
-                                for="#entrance-password-again"></label>
-                            <input class="form-entrance__input form-entrance__input-password"
-                                id="entrance-password-again" type="password" placeholder="Пароль ещё раз"
-                                tabindex="4" />
+                                for="#formregpasswordagain"></label>
+                            <input class="form-entrance__input form-entrance__input-password" id="formregpasswordagain"
+                                name="formregpasswordagain" type="password" placeholder="Пароль ещё раз" tabindex="4" />
                         </div>
+                        <div class="form-entrance__error" id="error-reg-checkbox"></div>
                         <div class="form-entrance__checkbox">
                             <div class="checkbox">
                                 <label class="checkbox__label">
-                                    <input class="checkbox__input" type="checkbox" tabindex="5" />
-                                    <span class="checkbox__span-fake"></span>
+                                    <input class="checkbox__input" id="formregchagree" name="formregchagree"
+                                        type="checkbox" tabindex="5" />
+                                    <span class="checkbox__span-fake" id="checkboxspanfake"></span>
                                     <span class="checkbox__span">Согласен с <a href="#"
                                             class="checkbox__link checkbox__link-rules">"Правилами&nbsp;сервиса".</a></span>
                                 </label>
                             </div>
                         </div>
                         <label class="form-entrance__label form-entrance__label">
-                            <input class="form-entrance__button" id="entrance-button" type="button"
-                                value="Зарегистрироваться" tabindex="5" />
+                            <button class="form-entrance__button" id="formregsubmit" name="formregsubmit" value="reg"
+                                type="submit" tabindex="6">Зарегистрировать</button>
                         </label>
                     </form>
                 </div>
@@ -342,6 +363,13 @@
             </div>
         </div>
     </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-auth-compat.js"></script>
+    <script src="/js/fb-config.js"></script>
+    <script src="/js/signup.js"></script>
+    <script src="js/login.js"></script>
 
 </body>
 

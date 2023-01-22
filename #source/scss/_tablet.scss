@@ -71,7 +71,8 @@
     .ads__body {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: 220px 179px;
+        //grid-template-rows: 220px 179px;
+        grid-template-rows: auto auto;
         row-gap: 52px;
         column-gap: 30px;
     }
@@ -106,9 +107,12 @@
     }
     .popup-entrance__content-popup-burger {
         background-color: $c-7-F3F1E7;
-        width: 226px;
-        padding: 28px 28px 40px 28px;
-        border-radius: 9px;
+        // width: 226px;
+        // padding: 28px 28px 40px 28px;
+        // border-radius: 9px;
+        width: 290px;
+        padding: 20px 20px 30px 30px;
+        border-radius: 8px;
     }
     .popup-entrance__header-popup-burger {
         margin-bottom: 0px;
