@@ -133,6 +133,10 @@ if (true) {
             regFormPasswordAgain.classList.remove("border-red");
         }
     });
+    regFormChekbox.addEventListener("input", (event) => {
+        event.preventDefault();
+        checkDisabledReg();
+    });
 
     function addHintPassword() {
         if (hintPassword) {
