@@ -35,6 +35,7 @@
         height: 30px;
     }
     .main {
+        min-height: calc(100vh - 190px);
         margin-bottom: 45px;
     }
     .banner {
