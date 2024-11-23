@@ -203,6 +203,7 @@ body.lock {
 
 .main {
   width: 100%;
+  min-height: calc(100vh - 210px);
   margin-bottom: 52px;
 }
 
@@ -1548,6 +1549,7 @@ body.lock {
     height: 30px;
   }
   .main {
+    min-height: calc(100vh - 190px);
     margin-bottom: 45px;
   }
   .banner {
